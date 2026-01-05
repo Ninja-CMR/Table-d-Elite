@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
 import { Calendar, Clock, Users, Check, MessageSquare } from 'lucide-vue-next';
 import { useWhatsApp } from '../composables/useWhatsApp';
 
 import diningRoom from "../assets/ImageElite/Reservation.jpg";
+import Footer from "../components/Footer.vue";
 
 const { sendReservationToWhatsApp } = useWhatsApp();
 
@@ -28,20 +27,9 @@ const timeSlots = [
   "19:00", "19:30", "20:00", "20:30", "21:00", "21:30",
 ];
 
-const occasions = [
-  "Aucune occasion particulière",
-  "Anniversaire",
-  "Dîner romantique",
-  "Repas d'affaires",
-  "Célébration",
-  "Autre",
-];
-
 const handleSubmit = () => {
-  // 1. On envoie les données vers WhatsApp via le composable
   sendReservationToWhatsApp(formData.value);
 
-  // 2. On affiche l'écran de succès sur le site
   isSubmitted.value = true;
 };
 </script>
@@ -152,7 +140,7 @@ const handleSubmit = () => {
                 <img :src="diningRoom" class="w-full h-[450px] object-cover transition-transform duration-1000 group-hover:scale-110" />
                 <div class="absolute inset-0 bg-gradient-to-t from-[#1D2B4F]/80 to-transparent"></div>
                 <div class="absolute bottom-8 left-8 right-8 text-white">
-                  <p class="font-serif text-2xl italic">"Une expérience culinaire inoubliable au cœur de Bonanjo."</p>
+                  <p class="font-serif text-2xl italic">"Une expérience culinaire inoubliable au cœur de Douala."</p>
                 </div>
               </div>
 

@@ -36,7 +36,7 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior(_to, _from, savedPosition) {
         if (savedPosition) {
             return savedPosition;
         } else {
@@ -45,8 +45,9 @@ const router = createRouter({
     }
 });
 
-router.beforeEach((to, from, next) => {
-    document.title = to.meta.title || 'La Table de l’Elite';
+router.beforeEach((to, _from, next) => {
+    const title = to.meta?.title as string;
+    document.title = title || 'La Table de l’Elite';
     next();
 });
 

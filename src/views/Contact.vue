@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
 import { MapPin, Phone, Mail, Clock } from 'lucide-vue-next';
 </script>
 
@@ -32,9 +30,8 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-vue-next';
             </div>
             <h3 class="font-serif text-xl text-[#1D2B4F] mb-3">Adresse</h3>
             <p class="font-sans text-sm text-gray-500 leading-relaxed">
-              Boulevard de la Liberté<br />
-              Bonanjo, Douala<br />
-              Cameroun
+              Rez de chaussée immeuble Elite Office<br />
+              Rue Dubois de Saligny
             </p>
           </div>
 
@@ -43,8 +40,8 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-vue-next';
               <Phone class="text-[#E67E22]" :size="28" />
             </div>
             <h3 class="font-serif text-xl text-[#1D2B4F] mb-3">Téléphone</h3>
-            <p class="font-sans text-sm text-gray-500 mb-4">+237 6 00 00 00 00</p>
-            <a href="tel:+237600000000" class="font-sans text-xs uppercase tracking-widest text-[#E67E22] font-bold hover:opacity-70 transition-opacity">
+            <p class="font-sans text-sm text-gray-500 mb-4">+237 6 86 15 17 17</p>
+            <a href="tel:+237686151717" class="font-sans text-xs uppercase tracking-widest text-[#E67E22] font-bold hover:opacity-70 transition-opacity">
               Appeler
             </a>
           </div>
@@ -54,8 +51,8 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-vue-next';
               <Mail class="text-[#E67E22]" :size="28" />
             </div>
             <h3 class="font-serif text-xl text-[#1D2B4F] mb-3">Email</h3>
-            <p class="font-sans text-sm text-gray-500 mb-4">contact@tabledelite.cm</p>
-            <a href="mailto:contact@tabledelite.cm" class="font-sans text-xs uppercase tracking-widest text-[#E67E22] font-bold hover:opacity-70 transition-opacity">
+            <p class="font-sans text-sm text-gray-500 mb-4">restaurant@eliteofficescm.com</p>
+            <a href="restaurant@eliteofficescm.com" class="font-sans text-xs uppercase tracking-widest text-[#E67E22] font-bold hover:opacity-70 transition-opacity">
               Nous écrire
             </a>
           </div>

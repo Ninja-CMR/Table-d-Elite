@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { X, Maximize2 } from 'lucide-vue-next';
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
-
 interface GalleryImage {
   id: number;
   src: string;
@@ -86,8 +83,6 @@ const closeLightbox = () => {
 
 <template>
   <div class="min-h-screen bg-white">
-    <Header />
-
     <section class="relative pt-40 pb-20 bg-[#1D2B4F] text-center">
       <div class="container mx-auto px-6">
         <p class="font-sans text-xs uppercase tracking-[0.4em] text-[#E67E22] mb-4">L'excellence en images</p>
@@ -165,8 +160,6 @@ const closeLightbox = () => {
         </div>
       </transition>
     </teleport>
-
-    <Footer />
   </div>
 </template>
 

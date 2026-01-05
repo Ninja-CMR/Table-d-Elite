@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
+import { ref } from 'vue'
 
 import imgEntrees from "../assets/ImageElite/dishesImage.jpg";
 import imgPoissons from "../assets/ImageElite/Dishe2.jpeg";
@@ -79,7 +77,6 @@ const activeTab = ref('entrees');
 
 <template>
   <div class="min-h-screen bg-white">
-    <Header />
 
     <section class="relative pt-40 pb-20 bg-[#1D2B4F] text-center border-b border-[#E67E22]/20">
       <div class="container mx-auto px-6">
@@ -178,8 +175,6 @@ const activeTab = ref('entrees');
         </p>
       </div>
     </section>
-
-    <Footer />
   </div>
 </template>
 

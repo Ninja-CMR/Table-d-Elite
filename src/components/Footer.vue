@@ -53,20 +53,20 @@ const currentYear = new Date().getFullYear();
             <div class="flex items-start gap-3">
               <MapPin :size="18" class="text-[#E67E22] mt-1 flex-shrink-0" />
               <span class="font-sans text-sm text-white/70">
-                Boulevard de la Liberté<br />
-                Bonanjo, Douala, Cameroun
+               Rez de chaussée immeuble Elite Office<br />
+                Rue Dubois de Saligny
               </span>
             </div>
             <div class="flex items-center gap-3">
               <Phone :size="18" class="text-[#E67E22] flex-shrink-0" />
               <span class="font-sans text-sm text-white/70">
-                +237 6 00 00 00 00
+                +237 6 86 15 17 17
               </span>
             </div>
             <div class="flex items-center gap-3">
               <Mail :size="18" class="text-[#E67E22] flex-shrink-0" />
               <span class="font-sans text-sm text-white/70">
-                contact@tabledelite.cm
+                restaurant@eliteofficescm.com
               </span>
             </div>
           </div>
