@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, type RouteLocationNormalized, type NavigationGuardNext } from 'vue-router';
 
 const routes = [
     {
@@ -36,7 +36,7 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    scrollBehavior(_to, _from, savedPosition) {
+    scrollBehavior(_to: RouteLocationNormalized, _from: RouteLocationNormalized, savedPosition: any) {
         if (savedPosition) {
             return savedPosition;
         } else {
@@ -45,8 +45,9 @@ const router = createRouter({
     }
 });
 
-router.beforeEach((to, _from, next) => {
-    const title = to.meta?.title as string;
+router.beforeEach((to: RouteLocationNormalized, _from: RouteLocationNormalized, next: NavigationGuardNext) => {
+
+    const title = to.meta?.title as string | undefined;
     document.title = title || 'La Table de l’Elite';
     next();
 });
