@@ -28,7 +28,6 @@ import Footer from './components/Footer.vue';
   opacity: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap');
 
 body {
   margin: 0;
