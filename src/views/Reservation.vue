@@ -4,7 +4,6 @@ import { Calendar, Clock, Users, Check, MessageSquare } from 'lucide-vue-next';
 import { useWhatsApp } from '../composables/useWhatsApp';
 
 import diningRoom from "../assets/ImageElite/Reservation.jpg";
-import Footer from "../components/Footer.vue";
 
 const { sendReservationToWhatsApp } = useWhatsApp();
 
@@ -36,7 +35,7 @@ const handleSubmit = () => {
 
 <template>
   <div class="min-h-screen bg-white">
-    <Header />
+
 
     <section class="relative pt-40 pb-20 bg-[#1D2B4F] text-center border-b border-[#E67E22]/20">
       <div class="container mx-auto px-6">
@@ -158,8 +157,6 @@ const handleSubmit = () => {
         </div>
       </div>
     </main>
-
-    <Footer />
   </div>
 </template>
 

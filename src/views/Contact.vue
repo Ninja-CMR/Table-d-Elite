@@ -4,8 +4,6 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-vue-next';
 
 <template>
   <div class="min-h-screen bg-white">
-    <Header />
-
     <section class="relative pt-40 pb-20 bg-[#1D2B4F] text-center border-b border-[#E67E22]/20">
       <div class="container mx-auto px-6">
         <p class="font-sans text-xs uppercase tracking-[0.4em] text-[#E67E22] mb-4">
@@ -114,8 +112,6 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-vue-next';
         </div>
       </div>
     </main>
-
-    <Footer />
   </div>
 </template>
 

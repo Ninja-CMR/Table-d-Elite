@@ -6,19 +6,13 @@ import Footer from './components/Footer.vue';
 <template>
   <div class="min-h-screen bg-[#F9F9F9] font-sans antialiased text-[#2C3E50]">
     <Header />
-
-    <main>
-      <router-view v-slot="{ Component }">
-        <transition
-            name="fade"
-            mode="out-in"
-        >
-          <component :is="Component" />
-        </transition>
-      </router-view>
-    </main>
-
-    <Footer v-if="$route.name !== 'Reservation'" />
+    <Header />
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    <Footer />
   </div>
 </template>
 

@@ -1,44 +1,48 @@
-import { createRouter, createWebHistory  } from 'vue-router';
+import { createRouter, createWebHashHistory  } from 'vue-router';
+
+
+import Home from '../views/Home/Home.vue';
+import Menu from '../views/Menu.vue';
+import Gallery from '../views/Gallery.vue';
+import Contact from '../views/Contact.vue';
+import Reservation from '../views/Reservation.vue';
 
 const routes = [
     {
         path: '/',
         name: 'Home',
-        component: () => import('../views/Home/Home.vue'),
+        component: Home,
         meta: { title: 'Accueil - La Table de l’Elite' }
     },
     {
         path: '/menu',
         name: 'Menu',
-        component: () => import('../views/Menu.vue'),
+        component: Menu ,
         meta: { title: 'Notre Carte - La Table de l’Elite' }
     },
     {
         path: '/galerie',
         name: 'Galerie',
-        component: () => import('../views/Gallery.vue'),
+        component: Gallery ,
         meta: { title: 'Galerie - La Table de l’Elite' }
     },
     {
         path: '/contact',
         name: 'Contact',
-        component: () => import('../views/Contact.vue'),
+        component: Contact,
         meta: { title: 'Contact - La Table de l’Elite' }
     },
     {
         path: '/reservation',
         name: 'Reservation',
-        component: () => import('../views/Reservation.vue'),
+        component: Reservation,
         meta: { title: 'Réserver une Table - La Table de l’Elite' }
     }
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(), // Change ici
     routes,
-    scrollBehavior() {
-        return { top: 0 };
-    }
 });
 
 export default router;

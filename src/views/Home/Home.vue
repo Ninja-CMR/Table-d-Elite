@@ -6,8 +6,9 @@ import Reservation from './reservation.vue'
 </script>
 
 <template>
-  <Hero/>
-  <Welcome/>
-  <MenuPreview/>
-  <Reservation/>
+  <div> <Hero/>
+    <Welcome/>
+    <MenuPreview/>
+    <Reservation/>
+  </div>
 </template>

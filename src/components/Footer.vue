@@ -110,10 +110,10 @@ const currentYear = new Date().getFullYear();
             © {{ currentYear }} La Table de l'Elite. Prestige & Tradition.
           </p>
           <div class="flex gap-6">
-            <router-link to="/mentions" class="font-sans text-[10px] uppercase tracking-widest text-white/40 hover:text-[#E67E22] transition-colors">
+            <router-link to="#" class="font-sans text-[10px] uppercase tracking-widest text-white/40 hover:text-[#E67E22] transition-colors">
               Mentions Légales
             </router-link>
-            <router-link to="/confidentialite" class="font-sans text-[10px] uppercase tracking-widest text-white/40 hover:text-[#E67E22] transition-colors">
+            <router-link to="#" class="font-sans text-[10px] uppercase tracking-widest text-white/40 hover:text-[#E67E22] transition-colors">
               Confidentialité
             </router-link>
           </div>
